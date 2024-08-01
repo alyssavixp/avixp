@@ -20,6 +20,7 @@ it brings me back to a time where i was inspired by all the endless possibilitie
 @font-face {
     font-family: 'Charcoal';
     src: url('fonts/charcoal.ttf') format('truetype');
+    /* Custom font definition */
 }
 
 body, html {
@@ -29,12 +30,14 @@ body, html {
     height: 100%;
     overflow: hidden;
     font-family: 'Charcoal', sans-serif;
+    /* Set font and remove default margin/padding */
 }
 
 .desktop-background {
     position: relative;
     width: 100%;
     height: 100%;
+    /* Container for the desktop background */
 }
 
 .background {
@@ -45,6 +48,7 @@ body, html {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    /* Desktop background image styling */
 }
 
 .start-bar {
@@ -52,10 +56,12 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
+    /* Start bar at the bottom */
 }
 
 .toolbar {
     width: 100%;
+    /* Toolbar image styling */
 }
 
 .window {
@@ -70,21 +76,25 @@ body, html {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.9);
     border: 2px solid #000;
+    /* Styling for the window that contains the main content */
 }
 
 .window-image {
     width: 100%;
+    /* Welcome window image styling */
 }
 
 .window-content {
     padding: 10px;
     overflow-y: auto;
+    /* Content inside the window */
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
+    /* Navigation styling */
 }
 
 button {
@@ -94,15 +104,18 @@ button {
     text-decoration: underline;
     cursor: pointer;
     font-family: 'Charcoal', sans-serif;
+    /* Button styling */
 }
 
 section {
     margin: 20px 0;
+    /* Section styling */
 }
 
 img {
     max-width: 100%;
     height: auto;
+    /* Image styling */
 }
 
 /*this layout was created by @alyssavixp on github and can be previewed at alyssavixp.github.io/avixp*/
