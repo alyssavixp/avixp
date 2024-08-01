@@ -1,6 +1,6 @@
-# avixp.github.io
+# Hello there!
 
-Hello there! This repository contains the source code for my personal portfolio website hosted on GitHub Pages.
+This repository contains the source code for my personal portfolio website hosted on GitHub Pages.
 
 ## Structure
 
