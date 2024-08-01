@@ -1,39 +1,35 @@
-/*
+<!-- 
 oh! funny to run into you here...
 
 feel free to take and iterate on this layout however you like.
 if you do, please credit to me if you can, give me a follow, or give this a like as i am building my portfolio :)
+-->
 
-about this website design:
-this website is based on my nostalgia for being a teenager in the early 2000s and what my desktop looked like 
-since my family's computer was a shared device in the living room, and we never changed the wallpaper.
-i spent hours on that computer teaching myself html and css to be able to customize my myspace page.
-i started teaching myself by inspecting other people's myspace profiles and stealing their code (sorry yall!) 
-and messing around with the stylization, making myself familiar to that and other markup languages.
- 
-i remember daydreaming of the day i got my first computer so i could finally change the background to be something of my own.
-27 years later, i still keep Bliss as my background on all my devices.
-it brings me back to a time where i was inspired by all the endless possibilities that opened up to me from that very large and very beige computer.
-27 years later, i am still inspired by all that the computer (& the internet!) brings me.
-*/
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alyssa Victoria Pena's Website</title>
+    <title>Alyssa Victoria Pena's Test Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to the CSS file -->
 </head>
 <body>
     <div class="desktop-background">
+        <!-- Desktop background image -->
         <img src="images/bliss.png" alt="Bliss Background" class="background">
+        
+        <!-- Start bar at the bottom -->
         <div class="start-bar">
             <img src="images/xptoolbar.png" alt="XP Toolbar" class="toolbar">
         </div>
+        
+        <!-- Window that contains the main content -->
         <div class="window">
             <img src="images/welcome.png" alt="Welcome Window" class="window-image">
             <div class="window-content">
                 <header>
+                    <!-- Navigation buttons -->
                     <nav>
                         <button onclick="document.getElementById('about').scrollIntoView();">About</button>
                         <button onclick="document.getElementById('portfolio').scrollIntoView();">Portfolio</button>
@@ -41,6 +37,8 @@ it brings me back to a time where i was inspired by all the endless possibilitie
                         <button onclick="document.getElementById('contact').scrollIntoView();">Contact</button>
                     </nav>
                 </header>
+
+                <!-- About section -->
                 <section id="about">
                     <h2>About</h2>
                     <p>My name is Alyssa Victoria Pena, and I’m a Computer Science student touching as much grass as I can in New York City while I pursue a Software Engineering career.</p>
@@ -48,6 +46,7 @@ it brings me back to a time where i was inspired by all the endless possibilitie
                     <img src="images/touchgrass.jpg" alt="Photo of Alyssa touching grass">
                 </section>
 
+                <!-- Portfolio section -->
                 <section id="portfolio">
                     <h2>Portfolio</h2>
                     <p>Now that I have proved that I do in fact go outside, take a look at what I’ve accomplished on a computer:</p>
@@ -58,6 +57,7 @@ it brings me back to a time where i was inspired by all the endless possibilitie
                     </ul>
                 </section>
 
+                <!-- Interests section -->
                 <section id="interests">
                     <h2>Interests</h2>
                     <p>If that’s not enough to convince you that I’m a perfect employee, here are things I’m an (embarrassingly) abnormal fan of:</p>
@@ -74,6 +74,7 @@ it brings me back to a time where i was inspired by all the endless possibilitie
                     </ul>
                 </section>
 
+                <!-- Contact section -->
                 <section id="contact">
                     <h2>Contact</h2>
                     <ul>
@@ -90,5 +91,3 @@ it brings me back to a time where i was inspired by all the endless possibilitie
     </div>
 </body>
 </html>
-
-/*this layout was created by @alyssavixp on github and can be previewed at alyssavixp.github.io/avixp*/
