@@ -1,54 +1,107 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/*
+oh! funny to run into you here...
+
+feel free to take and iterate on this layout however you like.
+if you do, please credit to me if you can, give me a follow, or give this a like as i am building my portfolio :)
+
+about this website design:
+this website is based on my nostalgia for being a teenager in the early 2000s and what my desktop looked like 
+since my family's computer was a shared device in the living room, and we never changed the wallpaper.
+i spent hours on that computer teaching myself html and css to be able to customize my myspace page.
+i started teaching myself by inspecting other people's myspace profiles and stealing their code (sorry yall!) 
+and messing around with the stylization, making myself familiar to that and other markup languages.
+ 
+i remember daydreaming of the day i got my first computer so i could finally change the background to be something of my own.
+27 years later, i still keep Bliss as my background on all my devices.
+it brings me back to a time where i was inspired by all the endless possibilities that opened up to me from that very large and very beige computer.
+27 years later, i am still inspired by all that the computer (& the internet!) brings me.
+*/
+
+@font-face {
+    font-family: 'Charcoal';
+    src: url('fonts/charcoal.ttf') format('truetype');
+}
+
+body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Charcoal', sans-serif;
 }
 
-header {
-    background: #f4f4f4;
-    padding: 20px;
-    text-align: center;
+.desktop-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-header h1 {
-    margin: 0;
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
+.start-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.toolbar {
+    width: 100%;
+}
+
+.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #000;
+}
+
+.window-image {
+    width: 100%;
+}
+
+.window-content {
+    padding: 10px;
+    overflow-y: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Charcoal', sans-serif;
 }
 
 section {
-    padding: 20px;
-}
-
-section h2 {
-    margin-top: 0;
+    margin: 20px 0;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+/*this layout was created by @alyssavixp on github and can be previewed at alyssavixp.github.io/avixp*/
