@@ -102,7 +102,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    /* Styling for window that contains main content */
+    /* Styling for the window that contains the main content */
 }
 
 .window-image {
@@ -113,7 +113,7 @@ body, html {
 
 .window-content {
     position: absolute;
-    top: 40px; /* Adjust top padding to fit inside image */
+    top: 40px; /* Adjust top padding to fit inside the image */
     left: 20px;
     right: 20px;
     bottom: 20px;
@@ -121,7 +121,7 @@ body, html {
     overflow-y: scroll;
     background: transparent;
     color: black;
-    /* Content inside window */
+    /* Content inside the window */
 }
 
 section {
@@ -138,7 +138,7 @@ img {
 /* Marquee styling */
 .marquee {
     position: fixed;
-    bottom: 0;
+    bottom: 40px; /* Above the toolbar */
     width: 100%;
     height: 40px; /* Adjust height as needed */
     overflow: hidden;
@@ -152,7 +152,7 @@ img {
     animation: marquee 120s linear infinite;
 }
 
-/* Animation for marquee */
+/* Animation for the marquee */
 @keyframes marquee {
     0% {
         transform: translateX(100%);
