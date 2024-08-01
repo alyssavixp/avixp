@@ -10,34 +10,40 @@ if you do, please credit to me if you can, give me a follow, or give this a like
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alyssa Victoria Pena's Test Portfolio</title>
+    <title>Alyssa Victoria Pena's website</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Link to the CSS file -->
 </head>
 <body>
+    <!-- Desktop background image -->
     <div class="desktop-background">
-        <!-- Desktop background image -->
         <img src="images/bliss.png" alt="Bliss Background" class="background">
-        
-        <!-- Start bar at the bottom -->
-        <div class="start-bar">
-            <img src="images/xptoolbar.png" alt="XP Toolbar" class="toolbar">
+
+        <!-- Navigation bar with buttons -->
+        <div class="nav-bar">
+            <button onclick="document.getElementById('portfolio').scrollIntoView();">
+                <img src="app_icons/portfolio.png" alt="Portfolio">
+            </button>
+            <button onclick="document.getElementById('interests').scrollIntoView();">
+                <img src="app_icons/interests.png" alt="Interests">
+            </button>
+            <button onclick="location.href='mailto:alyssavixp@gmail.com';">
+                <img src="app_icons/email.png" alt="Email">
+            </button>
+            <button onclick="document.getElementById('contact').scrollIntoView();">
+                <img src="app_icons/webcontact.png" alt="Web Contact">
+            </button>
+            <button onclick="document.getElementById('about').scrollIntoView();">
+                <img src="app_icons/touchgrass.png" alt="Touch Grass">
+            </button>
+            <button onclick="document.getElementById('crabrave').scrollIntoView();">
+                <img src="app_icons/crabrave.png" alt="Crab Rave">
+            </button>
         </div>
-        
-        <!-- Window that contains the main content -->
+
+        <!-- Main content window -->
         <div class="window">
             <img src="images/welcome.png" alt="Welcome Window" class="window-image">
             <div class="window-content">
-                <header>
-                    <!-- Navigation buttons -->
-                    <nav>
-                        <button onclick="document.getElementById('about').scrollIntoView();">About</button>
-                        <button onclick="document.getElementById('portfolio').scrollIntoView();">Portfolio</button>
-                        <button onclick="document.getElementById('interests').scrollIntoView();">Interests</button>
-                        <button onclick="document.getElementById('contact').scrollIntoView();">Contact</button>
-                    </nav>
-                </header>
-
                 <!-- About section -->
                 <section id="about">
                     <h2>About</h2>
@@ -86,7 +92,24 @@ if you do, please credit to me if you can, give me a follow, or give this a like
                         <li><a href="https://github.com/alyssavixp" target="_blank">GitHub</a></li>
                     </ul>
                 </section>
+
+                <!-- Crab Rave -->
+                <section id="crabrave">
+                    <h2>Crab Rave</h2>
+                    <p>Check out this cool video!</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cE0wfjsybIQ?si=TsetrviLHLkePL10" frameborder="0" allowfullscreen></iframe>
+                </section>
             </div>
+        </div>
+
+        <!-- Start bar at the bottom of the screen -->
+        <div class="start-bar">
+            <img src="images/xptoolbar.png" alt="XP Toolbar" class="toolbar">
+        </div>
+
+        <!-- Marquee with scrolling sonic -->
+        <div class="marquee">
+            <img src="images/gofast.gif" alt="Sonic gif running across your screen">
         </div>
     </div>
 </body>
