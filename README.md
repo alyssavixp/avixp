@@ -10,4 +10,4 @@ This repository contains the source code for my personal portfolio website hoste
 
 ## Website
 
-You can view the live website at [https://avixp.github.io](https://avixp.github.io).
+You can view the live website at [https://alyssavixp.github.io](https://alyssavixp.github.io/avixp/).
