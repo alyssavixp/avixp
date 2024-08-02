@@ -186,39 +186,6 @@ if you do, please credit to me if you can, give me a follow, or give this a like
             <img src="images/xptoolbar.png" alt="XP Toolbar" class="toolbar">
         </div>
     </div>
-    <!-- testing out javascript to see the interactivity of the buttons and window -->
-    <script>
-        function adjustIconPositions() 
-        {
-            const windowElement = document.querySelector('.window');
-            const touchGrassButton = document.getElementById('touch-grass-button');
-            const crabRaveButton = document.getElementById('crab-rave-button');
-
-            const windowRect = windowElement.getBoundingClientRect();
-            const touchGrassButtonRect = touchGrassButton.getBoundingClientRect();
-            const crabRaveButtonRect = crabRaveButton.getBoundingClientRect();
-
-            if (windowRect.top < touchGrassButtonRect.bottom) {
-                touchGrassButton.style.position = 'absolute';
-                touchGrassButton.style.top = '0';
-            } else {
-                touchGrassButton.style.position = 'fixed';
-                touchGrassButton.style.top = '';
-            }
-
-            if (windowRect.top < crabRaveButtonRect.bottom) {
-                crabRaveButton.style.position = 'absolute';
-                crabRaveButton.style.top = '60px';
-            } else {
-                crabRaveButton.style.position = 'fixed';
-                crabRaveButton.style.top = '';
-            }
-        }
-
-        window.addEventListener('resize', adjustIconPositions);
-        window.addEventListener('load', adjustIconPositions);
-    </script>
-
 </body>
 </html>
 
