@@ -57,7 +57,7 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: -1;
     /* Start bar at the bottom */
 }
 
@@ -80,13 +80,13 @@ body, html {
 .nav-bar button {
     background: none;
     border: none;
-    padding: 0;
+    padding: 5px;
     cursor: pointer;
     /* Button styling */
 }
 
 .nav-bar img {
-    width: 60px;
+    width: auto;
     height: 60px;
     /* Button image styling */
 }
@@ -95,33 +95,53 @@ body, html {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 824px;
+    width: 500px;
+    height: 800px;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    z-index: 1;
     /* Styling for the window that contains the main content */
 }
 
 .window-image {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     /* Welcome window image styling */
 }
 
 .window-content {
     position: absolute;
-    top: 40px; /* Adjust top padding to fit inside the image */
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    top: 50px; /* Adjust top padding to fit inside the image */
+    left: 25px;
+    right: 25px;
+    bottom: 5%;
     padding: 10px;
     overflow-y: scroll;
     background: transparent;
     color: black;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #f1f1f1; /* For Firefox */
     /* Content inside the window */
+}
+
+.window-content::-webkit-scrollbar {
+    width: 12px;
+    /* Scrollbar width for WebKit browsers */
+}
+
+.window-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Scrollbar track color */
+}
+
+.window-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+    /* Scrollbar thumb styling */
 }
 
 section {
@@ -135,21 +155,40 @@ img {
     /* Image styling */
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 20px 0; /* Add some space around the video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /* Marquee styling */
 .marquee {
-    position: fixed;
-    bottom: 0; /* Directly above the toolbar */
+    position: absolute;
+    top: 0; /* sit above About section */
     width: 100%;
-    height: 40px; /* Adjust height as needed */
+    height: 40px;
     overflow: hidden;
-    z-index: 2; /* Make sure it is above the toolbar */
+    z-index: 3;
     display: flex;
     align-items: center;
 }
 
 .marquee img {
     height: 100%;
-    animation: marquee 120s linear infinite;
+    animation: marquee 10s linear infinite;
 }
 
 /* Animation for the marquee */
@@ -162,4 +201,23 @@ img {
     }
 }
 
-/*this layout was created by @alyssavixp on github and can be previewed at alyssavixp.github.io/avixp*/
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .window {
+        width: 90%;
+        height: auto;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%, -50%);
+        z-index: 1;
+    }
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* this layout was created by @alyssavixp on github and can be previewed at alyssavixp.github.io/avixp */

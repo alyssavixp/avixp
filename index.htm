@@ -10,7 +10,7 @@ if you do, please credit to me if you can, give me a follow, or give this a like
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alyssa Victoria Pena's Test Portfolio</title>
+    <title>Alyssa Victoria Pena's Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -32,12 +32,21 @@ if you do, please credit to me if you can, give me a follow, or give this a like
             <button onclick="document.getElementById('contact').scrollIntoView();">
                 <img src="app_icons/webcontact.png" alt="Web Contact">
             </button>
-            <button onclick="document.getElementById('about').scrollIntoView();">
+            <button id="touch-grass-button" button onclick="document.getElementById('about').scrollIntoView();">
                 <img src="app_icons/touchgrass.png" alt="Touch Grass">
             </button>
-            <button onclick="document.getElementById('crabrave').scrollIntoView();">
+            <button id="crab-rave-button" button onclick="document.getElementById('crabrave').scrollIntoView();">
                 <img src="app_icons/crabrave.png" alt="Crab Rave">
             </button>
+            <!-- Dummy icon for future sections
+            <button onclick="document.getElementById('website').scrollIntoView();">
+                <img src="app_icons/tk1.png" alt="TK Section 1">
+            </button> --> 
+
+            <!-- Dummy icon for future sections
+            <button onclick="document.getElementById('dummy2').scrollIntoView();">
+                <img src="app_icons/tk2.png" alt="TK Section 2">
+            </button> -->
         </div>
 
         <!-- Main content window -->
@@ -46,27 +55,50 @@ if you do, please credit to me if you can, give me a follow, or give this a like
             <div class="window-content">
                 <!-- About section -->
                 <section id="about">
+                    <!-- Marquee with a scrolling sonic -->
+            
+                    <div class="marquee">
+                        <img src="images/gofast.gif" alt="Sonic gif running across your screen">
+                    </div>
                     <h2>About</h2>
-                    <p>My name is Alyssa Victoria Pena, and I’m a Computer Science student touching as much grass as I can in New York City while I pursue a Software Engineering career.</p>
-                    <p>Documented proof of me touching grass:</p>
-                    <img src="images/touchgrass.jpg" alt="Photo of Alyssa touching grass">
+                    <p>My name is Alyssa Victoria Pena, and I’m a Computer Science student at Fordham University, touching as much grass as I can find 
+                        in New York City.</p>
+                    <p>Here is documented proof of me being outside:</p>
+                    <img src="images/touchgrass.jpg" alt="Photo of Alyssa outside">
                 </section>
 
                 <!-- Portfolio section -->
                 <section id="portfolio">
                     <h2>Portfolio</h2>
-                    <p>Now that I have proved that I do in fact go outside, take a look at what I’ve accomplished on a computer:</p>
+                    <p>Now that I have proved to everyone that I do in fact go outside, take a look at what I’ve accomplished on a computer:</p>
                     <ul>
-                        <li><a href="https://github.com/alyssavixp" target="_blank">GitHub</a></li>
-                        <li><a href="link-to-ux-e-commerce-copy" target="_blank">UX E-Commerce Copy</a></li>
-                        <li><a href="link-to-retail-copywriting" target="_blank">Retail Copywriting</a></li>
+                        <li><a href="https://github.com/alyssavixp" target="_blank">My GitHub</a></li>
+                        <li><a href="https://github.com/alyssavixp/avixp/blob/main/portfolio.pdf" target="_blank">Copywriting Portfolio</a></li>
                     </ul>
+                    <p>This website was designed by me and you can see how I did it at it's <a href="https://github.com/alyssavixp/avixp" target="_blank">GitHub Page Repository</a>.</p>
                 </section>
+
+                <!-- this website -->
+                <section id="website">
+                    <h2>Why Windows XP?</h2>
+                    <p>I created this website inspired by my nostalgia for my own coming of age in the early 2000s and what my family's desktop looked like at home. 
+                        Since it was a shared device in the living room, and we never changed the wallpaper and we always kept everything on default settings. 
+                        One of first things I can remember doing on a computer was nesting a ton of folders within each other to keep the desktop neat and make sure Bliss was as visible as possible.</p>
+                    <p>In a way, I saw computer hardware as being the same as any canvas, and it's software an artist's expression come to life
+                        created by the generations of brilliant programmers and engineers who came before me.</p>
+                    <p>I spent hours on that computer teaching myself HTML and CSS to be able to customize my blogs and my MySpace page. I taught myself by inspecting other people's MySpace profiles 
+                        and stealing their code (sorry y'all!) and messing around with the stylization, making myself familiar with the structure of markup languages. 
+                        I remember daydreaming of the day I got my first computer so I could finally change the background to be something of my own.</p>
+                    <p>Twenty seven years later, I still keep Bliss as my background on all my new devices. It brings me back to a time when I was inspired by all the endless possibilities 
+                        that opened up to me from that very large and very beige computer. I am still inspired by all that the computer (& the internet!) brings me.</p>
+                    <p>I'm incredibly lucky to be studying and persuing a career in something I have dreamed about since childhood.</p>
+                </section>
+
 
                 <!-- Interests section -->
                 <section id="interests">
                     <h2>Interests</h2>
-                    <p>If that’s not enough to convince you that I’m a perfect employee, here are things I’m an (embarrassingly) abnormal fan of:</p>
+                    <p>If that’s not enough to convince you that I’m perfect for your team, here are more things I’m (embarrassingly) obsessed with:</p>
                     <ul>
                         <li>Star Wars</li>
                         <li>Video Games</li>
@@ -75,7 +107,10 @@ if you do, please credit to me if you can, give me a follow, or give this a like
                         <li>Neuroscience</li>
                         <li>High-Speed Rail</li>
                         <li>Historical Architecture</li>
-                        <li>Sustainability Initiatives</li>
+                        <li>Art History</li>
+                        <li>Sustainability Research</li>
+                        <li>Web Design</li>
+                        <li>Data Structures</li>
                         <li>C++ (please hire me)</li>
                     </ul>
                 </section>
@@ -85,20 +120,64 @@ if you do, please credit to me if you can, give me a follow, or give this a like
                     <h2>Contact</h2>
                     <ul>
                         <li><a href="mailto:alyssavixp@gmail.com">Personal Email</a></li>
-                        <li><a href="mailto:apena55@fordham.edu">University Email</a></li>
+                        <li><a href="mailto:apena55@fordham.edu">Student Email</a></li>
                         <li><a href="https://www.linkedin.com/in/alyssa-victoria-pena/" target="_blank">LinkedIn</a></li>
                         <li><a href="https://discordapp.com/users/avixp" target="_blank">Discord</a></li>
                         <li><a href="https://instagram.com/avixp" target="_blank">Instagram</a></li>
-                        <li><a href="https://github.com/alyssavixp" target="_blank">GitHub</a></li>
                     </ul>
                 </section>
 
-                <!-- Crab Rave section with YouTube video -->
+                <!-- the Crab Rave had to be a bit hidden as to not come across too unprofessional-->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <section id="crabrave">
                     <h2>Crab Rave</h2>
-                    <p>Check out this cool video!</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cE0wfjsybIQ?si=TsetrviLHLkePL10" frameborder="0" allowfullscreen></iframe>
+                    <div class="video-container">
+                        <iframe width="460" height="315" src="https://www.youtube.com/embed/cE0wfjsybIQ?si=TsetrviLHLkePL10" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </section>
+
+                <!-- Dummy Section 2 -->
+                <!--
+                <section id="dummy2">
+                    <h2>Dummy Section 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac volutpat odio. 
+                    Fusce vehicula, nisi ac egestas hendrerit, enim mauris venenatis turpis, non vestibulum dui eros a quam. 
+                    Sed sed nunc id dui laoreet vehicula.</p>
+                </section>
+                -->
+
             </div>
         </div>
 
@@ -106,12 +185,40 @@ if you do, please credit to me if you can, give me a follow, or give this a like
         <div class="start-bar">
             <img src="images/xptoolbar.png" alt="XP Toolbar" class="toolbar">
         </div>
-
-        <!-- Marquee with a scrolling GIF -->
-        <div class="marquee">
-            <img src="images/gofast.gif" alt="Sonic gif running across your screen">
-        </div>
     </div>
+    <!-- testing out javascript to see the interactivity of the buttons and window -->
+    <script>
+        function adjustIconPositions() 
+        {
+            const windowElement = document.querySelector('.window');
+            const touchGrassButton = document.getElementById('touch-grass-button');
+            const crabRaveButton = document.getElementById('crab-rave-button');
+
+            const windowRect = windowElement.getBoundingClientRect();
+            const touchGrassButtonRect = touchGrassButton.getBoundingClientRect();
+            const crabRaveButtonRect = crabRaveButton.getBoundingClientRect();
+
+            if (windowRect.top < touchGrassButtonRect.bottom) {
+                touchGrassButton.style.position = 'absolute';
+                touchGrassButton.style.top = '0';
+            } else {
+                touchGrassButton.style.position = 'fixed';
+                touchGrassButton.style.top = '';
+            }
+
+            if (windowRect.top < crabRaveButtonRect.bottom) {
+                crabRaveButton.style.position = 'absolute';
+                crabRaveButton.style.top = '60px';
+            } else {
+                crabRaveButton.style.position = 'fixed';
+                crabRaveButton.style.top = '';
+            }
+        }
+
+        window.addEventListener('resize', adjustIconPositions);
+        window.addEventListener('load', adjustIconPositions);
+    </script>
+
 </body>
 </html>
 
